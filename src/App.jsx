@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Router from './Navigations/Router'
 import Navbar from './components/Navbar'
 import AutoSwiper from './components/Swiper'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -21,12 +22,13 @@ function App() {
       <Header/>
       <Navbar/>
       <AutoSwiper/>
+      <Footer/>
       <Router/>
       </>
       ):<Dashboard/>
     }
   </BrowserRouter>
-  </>
+  </> 
   )
 }
 
