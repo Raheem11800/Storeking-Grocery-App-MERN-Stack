@@ -7,6 +7,8 @@ import Router from './Navigations/Router'
 import Navbar from './components/Navbar'
 import AutoSwiper from './components/Swiper'
 import Footer from './components/Footer'
+import Cards from './components/Cards'
+
 
 function App() {
 
@@ -22,6 +24,7 @@ function App() {
       <Header/>
       <Navbar/>
       <AutoSwiper/>
+      <Cards/>
       <Footer/>
       <Router/>
       </>
