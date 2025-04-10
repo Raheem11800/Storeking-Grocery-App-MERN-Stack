@@ -1,12 +1,12 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
-import { Pagination, Autoplay } from 'swiper/modules';
-import Slider1 from '../assets/Slider_Images/1.png';
-import Slider2 from '../assets/Slider_Images/2.png';
-import Slider3 from '../assets/Slider_Images/3.png';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import { Pagination, Autoplay } from "swiper/modules";
+import Slider1 from "../assets/Slider_Images/1.png";
+import Slider2 from "../assets/Slider_Images/2.png";
+import Slider3 from "../assets/Slider_Images/3.png";
 
 const AutoSwiper = () => {
   return (
@@ -17,16 +17,13 @@ const AutoSwiper = () => {
         <Swiper
           // Enable pagination bullets with dynamic styling
           pagination={{ dynamicBullets: true }}
-          
           // Enable autoplay with a 2-second delay
           autoplay={{
             delay: 2000,
             disableOnInteraction: false,
           }}
-
           // Enable infinite loop
           loop={true}
-
           // Register Swiper modules
           modules={[Pagination, Autoplay]}
         >

@@ -1,45 +1,45 @@
-import React from 'react';
-import FooterLogo from '../assets/footer-logo.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { footer } from './CSSHelper/Footer_CSS';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import FooterLogo from "../assets/footer-logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { footer } from "./CSSHelper/Footer_CSS";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   // Support section links
   const support = [
-    { title: 'Support' },
-    { text: 'FAQ' },
-    { text: 'Return & Exchange' },
-    { text: 'Delivery' },
-    { text: 'Contact us' },
+    { title: "Support" },
+    { text: "FAQ" },
+    { text: "Return & Exchange" },
+    { text: "Delivery" },
+    { text: "Contact us" },
   ];
 
   // Legal section links
   const legal = [
-    { title: 'Legal' },
-    { text: 'About Us' },
-    { text: 'Cookie Policy' },
-    { text: 'Terms & Conditions' },
-    { text: 'Privacy Policy' },
+    { title: "Legal" },
+    { text: "About Us" },
+    { text: "Cookie Policy" },
+    { text: "Terms & Conditions" },
+    { text: "Privacy Policy" },
   ];
 
   // Contact section with icons
   const contact = [
-    { title: 'Contact' },
-    { icon: faLocationDot, text: 'House : 25, Road No: 2, Block A,' },
-    { text: 'Mirpur-1, Dhaka 1216' },
-    { icon: faEnvelope, text: 'info@inilabs.net' },
-    { icon: faPhone, text: '+8801333384628' },
+    { title: "Contact" },
+    { icon: faLocationDot, text: "House : 25, Road No: 2, Block A," },
+    { text: "Mirpur-1, Dhaka 1216" },
+    { icon: faEnvelope, text: "info@inilabs.net" },
+    { icon: faPhone, text: "+8801333384628" },
   ];
 
   return (
-    <div className="grid grid-cols-4 h-72 w-full bg-[#1F1F39] mt-20">
+    <div className="grid grid-cols-4 h-72 w-full bg-[#1F1F39] mt-10">
       {/* Column 1: Logo, newsletter input, subscribe button, and social media icons */}
       <div className="mt-10">
         {/* Company logo */}
@@ -55,7 +55,7 @@ function Footer() {
         </label>
 
         {/* Email input and subscribe button */}
-        <div className="h-10 w-80 bg-white rounded-full pl-5 pt-1 mt-5 ml-3 flex items-center">
+        <div className="h-10 w-80 bg-white rounded-full p-5 mt-5 ml-3 flex items-center">
           <input
             type="email"
             placeholder="Your email address"

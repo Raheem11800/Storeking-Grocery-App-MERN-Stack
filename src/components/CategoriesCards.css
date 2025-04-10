@@ -1,0 +1,27 @@
+/* Customize the navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  font-size: 14px; 
+  color: #01BE5F; 
+  background-color: #E0E0E0; 
+  border-radius: 50%; 
+  height: 30px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px; 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* Change hover background color */
+.swiper-button-next:hover,
+.swiper-button-prev:hover { 
+    background-color: #01BE5F;
+  color: #fff; 
+}
+
+/* Customize the arrow icon */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 12px; 
+}

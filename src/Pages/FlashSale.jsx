@@ -1,10 +1,10 @@
 import React from 'react'
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import Pagination from '../components/Pagination'
+import Footer from '../components/Footer'
 
-function Offers() {
+function FlashSale() {
   return (
     <>
     <Header/>
@@ -15,4 +15,4 @@ function Offers() {
   )
 }
 
-export default Offers
+export default FlashSale

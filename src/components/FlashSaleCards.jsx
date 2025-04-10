@@ -85,31 +85,34 @@ function Cards() {
   ];
 
   return (
-    <div className="grid grid-cols-5 gap-5 p-5">
-      {cards.map((card, index) => (
-        <div
-          key={index}
-          className="w-auto mt-5 border rounded-2xl shadow-lg border-gray-200 h-auto p-4"
-        >
-          <img
-            className="w-auto rounded-xl transition-all duration-300 hover:scale-105 hover:rotate-3"
-            src={card.Image}
-            alt="Card"
-          />
-          <div className="pt-4">
-            <p className="text-md font-medium text-gray-900 pb-2">
-              {card.title}
-            </p>
-            <p className="text-[10px] text-gray-600 pb-2">{card.text}</p>
-            <div className="flex flex-row gap-2 items-center">
-              <p className="text-[#01BE5F] font-bold text-lg">{card.price}</p>
-              <p className="text-[#95A3B9] line-through pl-5 text-xs">
-                {card.Cprice}
+    <div>
+      <h1 className="text-[30px] font-bold ml-7 mt-10">Flash Sale</h1>
+      <div className="grid grid-cols-5 gap-5 p-5">
+        {cards.map((card, index) => (
+          <div
+            key={index}
+            className="w-auto mt-5 border rounded-2xl shadow-lg border-gray-200 h-auto p-4"
+          >
+            <img
+              className="w-auto rounded-xl transition-all duration-300 hover:scale-105 hover:rotate-3"
+              src={card.Image}
+              alt="Card"
+            />
+            <div className="pt-4">
+              <p className="text-md font-medium text-gray-900 pb-2">
+                {card.title}
               </p>
+              <p className="text-[10px] text-gray-600 pb-2">{card.text}</p>
+              <div className="flex flex-row gap-2 items-center">
+                <p className="text-[#01BE5F] font-bold text-lg">{card.price}</p>
+                <p className="text-[#95A3B9] line-through pl-5 text-xs">
+                  {card.Cprice}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
