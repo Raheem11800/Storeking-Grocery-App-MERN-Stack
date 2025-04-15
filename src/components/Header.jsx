@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import StoreLogo from "../assets/Store-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,8 +9,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import UK_lang from "./Flags-svg";
 import { header } from "./CSSHelper/Header_CSS";
+import Login from "./Login";
 
 function Header() {
+  const navigate = useNavigate();
   return (
     <>
       {/* Header */}
@@ -54,7 +57,7 @@ function Header() {
             </div>
 
             {/* Account Section */}
-            <div className="flex mt-2 ml-3">
+            <div className="flex mt-2 ml-3" onClick={()=> navigate("/Login")}>
               <div className={header.acc_icon}>
                 <FontAwesomeIcon icon={faUser} className="text-white text-sm" />
               </div>

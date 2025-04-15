@@ -189,7 +189,7 @@ function Navbar() {
               {category.map((item, index) => (
                 <li
                   key={index}
-                  className="relative px-4 py-2 hover:bg-gray-100 cursor-pointer rounded-lg"
+                  className="relative px-4 py-2 hover:bg-gray-100 cursor-pointer rounded-lg "
                   onMouseEnter={() => item.submenu && SetSubOpenIndex(index)} // Show submenu when mouse enters
                   onMouseLeave={() => SetSubOpenIndex(null)} // Hide submenu when mouse leaves
                 >
@@ -203,11 +203,11 @@ function Navbar() {
                       />
                       {/* Submenu dropdown */}
                       {SubOpenIndex === index && (
-                        <ul className="absolute left-full top-0 bg-white border shadow-lg w-60 z-20 rounded-lg">
+                        <ul className="absolute left-full top-0 bg-white border shadow-lg w-60 z-20 rounded-lg ">
                           {item.submenu.map((sub, subindex) => (
                             <li
                               key={subindex}
-                              className="relative px-4 py-2 hover:bg-gray-100 rounded-lg"
+                              className="relative px-4 py-2 hover:bg-gray-100 rounded-lg "
                               onMouseEnter={() =>
                                 sub.submenu && SetSubSubOpenIndex(subindex)
                               } // Show third-level submenu

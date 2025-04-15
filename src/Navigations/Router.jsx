@@ -5,6 +5,8 @@ import Auth from '../Pages/Auth'
 import Offers from '../Pages/Offers'
 import DailyDeals from '../Pages/DailyDeals'
 import FlashSale from '../Pages/FlashSale'
+import Login from '../components/Login'
+import SignUp from '../components/SignUp'
 
 function Router() {
   return (
@@ -15,6 +17,8 @@ function Router() {
       <Route path="/daily-deals" element={<DailyDeals />} />
       <Route path="/flash-sale" element={<FlashSale/>} />
       <Route path="/auth" element={<Auth />} />
+      <Route path="/Login" element={<Login />} />
+      <Route path="/Signup" element={<SignUp />} />
     </Routes>
   )
 }
